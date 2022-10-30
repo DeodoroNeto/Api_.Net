@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace ApiSysMap.Data
 {
-    public class SystemSalesDBContex : DbContext
+    public class SystemSalesDBContext : DbContext
     {
-        public SystemSalesDBContex(DbContextOptions<SystemSalesDBContex>options)
+        public SystemSalesDBContext(DbContextOptions<SystemSalesDBContext>options)
             : base(options)
         {
         }

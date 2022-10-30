@@ -1,5 +1,6 @@
 ﻿using ApiSysMap.Models;
 using ApiSysMap.Data;
+using ApiSysMap.Controllers;
 using ApiSysMap.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -11,9 +12,9 @@ namespace ApiSysMap.Repository
 {
     public class UserRepository : IUserReposity
     {
-        private readonly SystemSalesDBContex _dbcontex;
+        private readonly SystemSalesDBContext _dbcontex;
 
-        public UserRepository(SystemSalesDBContex systemSalesDBContex)
+        public UserRepository(SystemSalesDBContext systemSalesDBContex)
         {
             _dbcontex = systemSalesDBContex;
         }
